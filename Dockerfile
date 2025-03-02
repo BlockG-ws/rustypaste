@@ -17,5 +17,5 @@ WORKDIR /app
 COPY --from=builder /app/build-out/rustypaste .
 ENV SERVER__ADDRESS=0.0.0.0:8000
 EXPOSE 8000
-USER 1000:1000
+#USER 1000:1000
 CMD ["./rustypaste"]
